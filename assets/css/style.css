@@ -2325,6 +2325,17 @@ video {
   forced-color-adjust: none;
 }
 
+.puce {
+  height: 15px;
+  width: 15px;
+  border-radius: 100%;
+  background: lightgrey;
+}
+
+.active {
+  background: grey;
+}
+
 .container {
   width: 100%;
 }
@@ -2372,6 +2383,7 @@ video {
 }
 
 .slider {
+  position: relative;
   height: 300px;
   width: 80%;
 }
@@ -2411,6 +2423,18 @@ video {
   .slide {
     min-width: 300px;
   }
+}
+
+.puces {
+  position: absolute;
+  bottom: -30px;
+  left: 0px;
+  display: flex;
+  height: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
 @media (min-width: 640px) {
@@ -2496,6 +2520,4 @@ video {
     }
   }
 }
-
-
 

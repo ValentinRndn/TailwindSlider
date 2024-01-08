@@ -4,7 +4,7 @@
 
 
 .slider {
-    @apply w-[80%] sliderSM:w-[710px] sliderMD:w-[920px] h-[300px];
+    @apply w-[80%] sliderSM:w-[710px] sliderMD:w-[920px] h-[300px] relative;
 }
 
 .slides {
@@ -15,5 +15,19 @@
     @apply min-w-full sliderSM:min-w-[350px] sliderMD:min-w-[300px] h-full;
 }
 
+.puces {
+    @apply absolute w-full h-[20px] bottom-[-30px] left-0 flex items-center justify-center gap-2;
+}
+@layer utilities {
+    .puce {
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background: lightgrey;
+    }
 
+    .active {
+        background: grey;
+    }
+}
 
