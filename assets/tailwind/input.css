@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+
+.slider {
+    @apply w-[80%] sliderSM:w-[710px] sliderMD:w-[920px] h-[300px];
+}
+
+.slides {
+    @apply w-full h-full overflow-hidden flex gap-[10px];
+}
+
+.slide {
+    @apply min-w-full sliderSM:min-w-[350px] sliderMD:min-w-[300px] h-full;
+}
+
+
+
