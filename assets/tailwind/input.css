@@ -29,5 +29,13 @@
     .active {
         background: grey;
     }
+
+    .slides {
+        scroll-behavior: smooth;
+    }
+
+    .slides.active {
+        scroll-behavior: inherit;
+    }
 }
 
